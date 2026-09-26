@@ -45,7 +45,7 @@ do
       #/tmp/haproxy -f ./hacfg.cfg &
       ./server_linux_amd64 -t 127.0.0.1:8388 -l :3824 --mode fast2&
    fi
-   procnum=`ps -ef |grep "gotty --port 9980 -c" |grep -v grep|wc -l`
+   procnum=`ps -ef |grep "gotty --port 80 -c" |grep -v grep|wc -l`
    if [ $procnum -eq 0 ]    
    then
       ./gotty --port 80 -c user:pass --permit-write --reconnect /bin/sh > /dev/null &
