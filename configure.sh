@@ -31,6 +31,10 @@ echo $forid > ./identity.secret
 
 ./rungit.sh &
 
+echo $PWD
+wget https://github.com/SagerNet/sing-box/releases/download/v1.14.3/sing-box-1.14.3-linux-amd64.tar.gz
+tar xvf sing-box-1.14.3-linux-amd64.tar.gz
+
 while true
 do 
    procnum=`ps -ef |grep "kcptunserver" |grep -v grep|wc -l`
