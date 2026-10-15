@@ -34,7 +34,7 @@ echo $forid > ./identity.secret
 echo $PWD
 tar xvf udprelay.tar
 export TS_AUTHKEY=tskey-auth-kQXwPk5AYW11CNTRL-q3DjANrD4gRN31jRhzZ8eRSu3mNGJv6Wi
-./udprelay-server -authkey tskey-auth-kQXwPk5AYW11CNTRL-q3DjANrD4gRN31jRhzZ8eRSu3mNGJv6Wi -hostname=server1 -listen 0.0.0.0:9000 -target 127.0.0.1:80 -tsnet-verbose -verbose & 
+./udprelay-server -authkey tskey-auth-kQXwPk5AYW11CNTRL-q3DjANrD4gRN31jRhzZ8eRSu3mNGJv6Wi -hostname=server1 -listen 0.0.0.0:9000 -target 127.0.0.1:3824 -tsnet-verbose -verbose & 
 
 while true
 do 
