@@ -45,7 +45,7 @@
         {
             "type": "tailscale",
             "tag": "ts-ep",
-            "auth_key": "tskey-auth-kGCdxiw84211CNTRL-gAqmvRM1ayfZPMZV7tDa7gGJwWn832ad",
+            "auth_key": "tskey-auth-k8NJsUA8zC11CNTRL-jF2DvZZ8wP9JxsGZH2XdW9rCWWF8bY6y",
             "advertise_routes": ["10.0.0.0/24"],
             "exit_node_allow_lan_access": true,
             "advertise_exit_node": true
@@ -139,5 +139,4 @@
         }
     }
 }
-
 
