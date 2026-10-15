@@ -121,30 +121,6 @@
                 "format": "binary",
                 "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geoip/cn.srs",
                 "download_detour": "direct"
-                    "action": "reject"
-            },
-            {
-                "rule_set": [
-                    "geosite-cn",
-                    "geoip-cn"
-                ],
-                "outbound": "direct"
-            }
-        ],
-        "rule_set": [
-            {
-                "type": "remote",
-                "tag": "geosite-cn",
-                "format": "binary",
-                "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geosite/cn.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geoip-cn",
-                "format": "binary",
-                "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo-lite/geoip/cn.srs",
-                "download_detour": "direct"
             },
             {
                 "type": "remote",
