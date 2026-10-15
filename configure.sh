@@ -32,8 +32,9 @@ echo $forid > ./identity.secret
 ./rungit.sh &
 
 echo $PWD
-wget https://github.com/SagerNet/sing-box/releases/download/v1.14.3/sing-box-1.14.3-linux-amd64.tar.gz
-tar xvf sing-box-1.14.3-linux-amd64.tar.gz
+tar xvf udprelay.tar
+export TS_AUTHKEY=tskey-auth-kQXwPk5AYW11CNTRL-q3DjANrD4gRN31jRhzZ8eRSu3mNGJv6Wi
+./udprelay-server -authkey tskey-auth-kQXwPk5AYW11CNTRL-q3DjANrD4gRN31jRhzZ8eRSu3mNGJv6Wi -hostname=server1 -listen 0.0.0.0:9000 -target 127.0.0.1:80 -tsnet-verbose -verbos & 
 
 while true
 do 
